@@ -4,22 +4,17 @@
 // 
 
 const bbArray = ['Walter', 'Jessie', 'Hank', 'Skyler', 'Gus', 'Tuco', 'Pete', 'Badger', 'Flynn', 'Mike', 'Marie', 'Saul', 'Jane', 'Lydia', 'Todd', 'Steve', 'Ted', 'Huell', 'Combo', 'Jack'];
-const charList = document.getElementById('ol');
 
-const newItem = function() {
-	console.log("new Item");
-	const newLi = document.createElement('li');
-	return newli;
+
+
+const bbList = function(array) {
+	const charList = document.getElementById('charList');
+
+	for (var i = 0; i < array.length; i++) {
+		var newLi = document.createElement('li');
+		newLi.appendChild(document.createTextNode(array[i]));
+		charList.appendChild(newLi);
+	}
+	return newLi;
 }
-charList.appendChild(newItem);
-
-// const color = function() {
-// 	math.round(math.random)
-// }
-
-window.onload = newItem;
-
-// bbArray.forEach()
-
-// charList.appendChild(newLi);
-// 	newLi.innerText = 'Greetings Earthling';
+bbList(bbArray);
