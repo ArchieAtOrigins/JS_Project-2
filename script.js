@@ -1,13 +1,14 @@
-// display a numbered list of all names in the array
-// add a random number to each name
-// sort the list based on the random number
-// 
 
 const bbArray = ['Walter', 'Jessie', 'Hank', 'Skyler', 'Gus', 'Tuco', 'Pete', 'Badger', 'Flynn', 'Mike', 'Marie', 'Saul', 'Jane', 'Lydia', 'Todd', 'Steve', 'Ted', 'Huell', 'Combo', 'Jack'];
 
+const wdArray = ['Rick', 'Daryl', 'Glenn', 'Maggie', 'Carl', 'Carol', 'Michonne', 'Lori', 'Morgan', 'Tyreese', 'Sasha', 'Beth', 'Tara', 'Hershel'];
+
+const ffArray = ['Malcolm', 'Zoe', 'Hoban', 'Inara', 'Jayne', 'Kaylee', 'Simon', 'River', 'Sheperd', 'Saffron', 'Badger', 'Patience', 'Tara';
+
+const wdArray = ['Piper', 'Alex', 'Sophia', 'Stella', 'Suzanne', 'Nicky', 'Doggett', 'Red', 'Poussey', 'Diaz', 'Jackie', 'Lorna', 'Sam', 'Alieda', 'Caputo', 'Norma', 'Gloria', 'Boo', 'Jane', 'Wanda', 'Piscatella', 'Hayes'];
 
 
-const bbList = function(array) {
+const castList = function(array) {
 	const charList = document.getElementById('charList');
 
 	for (var i = 0; i < array.length; i++) {
@@ -17,4 +18,8 @@ const bbList = function(array) {
 	}
 	return newLi;
 }
-bbList(bbArray);
+castList(wdArray);
+
+
+
+
