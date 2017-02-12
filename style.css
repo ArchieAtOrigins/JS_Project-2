@@ -9,3 +9,7 @@ body {
 	color: #999fff;
 	text-align: center;
 }
+label, select {
+	margin: 8px;
+	padding: 8px;
+}
