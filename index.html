@@ -4,20 +4,24 @@
 	<meta charset="UTF-8">
 	<title>For Each Project</title>
 	<link rel="stylesheet" type="text/css" href="style.css"></li>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
 <body>
-	<h1 id="headertitle">Cast Members of Breaking Bad</h1>
-	
-	<label for="showName">Select Show</label>
-	<select id="showName" onchange="castList(showDropdown)">
-		<option>Choose Show Here</option>
-		<option>Breaking Bad</option>
-		<option>Walking Dead</option>
-		<option>Firefly</option>
-		<option>Orange is the New Black</option>
-	</select>
-	<ol id="charList">
-	</ol>
+	<div id="container">
+		<h1 id="headertitle">Cast Members from Hit Shows!</h1>
+		<div id="cast">
+			<label for="showName">Select Show</label>
+				<select id="showName" onchange="castList(showDropdown)">
+					<option>Choose Show Here</option>
+					<option>Breaking Bad</option>
+					<option>Walking Dead</option>
+					<option>Firefly</option>
+					<option>Orange is the New Black</option>
+				</select>
+			<ol id="charList">
+			</ol>
+		</div>
+	</div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
